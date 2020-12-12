@@ -13,6 +13,10 @@ def start_colorama():
 
     if option == 1:
        option_1()
+    elif option == 2:
+       option_2()
+    else:
+       print("Not valid entry")
 
 
 
@@ -46,6 +50,25 @@ def option_1():
     print("When we want to refer to our value of variable " + variable + " we simply just use the name that we named the variable. For example, if we do " +
          variable + " 10. What would be the result?")
     
+
+
+def option_2():
+    # background with be cyan color
+    print(Back.CYAN + " ")
+    
+
+    # printing 0's to make a tree
+    print(Fore.GREEN + Style.BRIGHT + "     0    ")
+    
+    # Since text has been defined above any text I write will also be green and bright
+    print("     000     ")
+    print("    00000    ")
+    print("   0000000   ")
+    print("  000000000  ")
+   
+    # When ever we want to reset we have to print it as well
+    print(Style.RESET_ALL)
+
 
     
 
