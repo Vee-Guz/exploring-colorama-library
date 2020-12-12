@@ -29,8 +29,25 @@ def option_1():
     print("")
     print(Style.RESET_ALL + "I'll do an example below")
     
+    print("If we wanted to teach about how variables work in python we can do so using colorama. Let's take into account, x = 5")
+
+    variable = Back.RED + "x" + Back.RESET
+    value = Back.CYAN + "5"+ Back.RESET
     
 
+    print("The variable is " + variable + ". A variable stores a value in memory that can be accessed throughout your code. In this scenario, our variable is called x, but it can have any name as long as it does not start with a number.")
+
+
+    print("The value is " + value)
+    
+    print("By writing " + variable + " = " + value + " we are saying that x holds the content of interger 5")
+
+
+    print("When we want to refer to our value of variable " + variable + " we simply just use the name that we named the variable. For example, if we do " +
+         variable + " 10. What would be the result?")
+    
+
+    
 
 
 start_colorama()
