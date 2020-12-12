@@ -52,25 +52,22 @@ def option_1():
     
 
 
-def option_2():
-    # background with be cyan color
-    print(Back.CYAN + " ")
+def option_2():  
+    # the drawing will be a christmas tree
     
-
+    # * represents the start and it will be in yellow, since I will be using green next I am resetting after printing the star
+    print(Fore.YELLOW + "      *      " + Fore.RESET)
+    
     # printing 0's to make a tree
-    print(Fore.GREEN + Style.BRIGHT + "     0    ")
-    
     # Since text has been defined above any text I write will also be green and bright
+    print(Fore.GREEN + "      0      ")
     print("     000     ")
     print("    00000    ")
     print("   0000000   ")
     print("  000000000  ")
    
-    # When ever we want to reset we have to print it as well
-    print(Style.RESET_ALL)
-
-
+    # When ever we want to reset we have to print it as well, text will now be black, | represent the start of the tree stump
+    print(Fore.RESET + Fore.RED + "      |      ")
     
-
 
 start_colorama()
